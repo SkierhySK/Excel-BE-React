@@ -1,0 +1,32 @@
+{
+	"name": "excel-be-react",
+	"version": "1.0.0",
+	"description": "Backend para el proyecto de excel",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon src/index.js",
+		"start": "node src/index.js",
+		"format": "prettier --write .",
+		"lint": "eslint --fix . --ext .js,.ts,.jsx,.tsx"
+	},
+	"keywords": [],
+	"author": "Skierhy",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"mongodb": "^4.13.0",
+		"mongoose": "^6.9.0",
+		"nodemon": "^2.0.20"
+	},
+	"devDependencies": {
+		"eslint": "^8.32.0",
+		"eslint-config-prettier": "^8.6.0",
+		"eslint-config-standard": "^17.0.0",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-n": "^15.6.1",
+		"eslint-plugin-promise": "^6.1.1",
+		"prettier": "^2.8.3"
+	}
+}

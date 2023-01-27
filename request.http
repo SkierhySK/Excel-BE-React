@@ -1,0 +1,57 @@
+###
+POST http://localhost:9000/api/tablas HTTP/1.1
+Content-Type: application/json
+
+{
+  "Tabla":
+  [
+    {
+    "Date": "44562",
+    "Punch In": "0.375",
+    "Punch Out": "0.25",
+    "User ID": "0001",
+    "User Name": "AAA"
+  },
+  {
+    "Date": "44562",
+    "Punch In": "0.375",
+    "Punch Out": "0.25",
+    "User ID": "0001",
+    "User Name": "AAA"
+  }
+  ]
+}
+
+
+###
+GET http://localhost:9000/api/tablas HTTP/1.1
+
+###
+GET http://localhost:9000/api/tablas/63d2e9327a0088792ad1c68a HTTP/1.1
+
+###
+DELETE http://localhost:9000/api/tablas/63d2debd158f409b74264dc2 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/tablas/63d2e9327a0088792ad1c68a HTTP/1.1
+Content-Type: application/json
+
+{
+  "Tabla":
+  [
+    {
+    "Date": "1",
+    "Punch In": "1",
+    "Punch Out": "1",
+    "User ID": "1",
+    "User Name": "1"
+  },
+  {
+    "Date": "1",
+    "Punch In": "1",
+    "Punch Out": "1",
+    "User ID": "1",
+    "User Name": "1"
+  }
+  ]
+}
